@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Spotify Project</title>
+
+  <script>
+    function sendEmail() {
+      var userText = document.getElementById('userText').value;
+      var emailBody = encodeURIComponent(userText);
+      var emailAddress = 'ksuhavilhova@gmail.com';
+      var subject = 'User Feedback';
+
+      var mailtoLink = 'mailto:' + emailAddress + '?subject=' + subject + '&body=' + emailBody;
+      window.location.href = mailtoLink;
+    }
+  </script>
+</head>
+<body>
+<textarea id="userText" placeholder="Type your message here"></textarea>
+<button onclick="sendEmail()">Send Email</button>
+
+</body>
+</html>
