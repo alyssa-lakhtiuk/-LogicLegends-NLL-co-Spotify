@@ -48,10 +48,14 @@ app.get('/', (req, res) => {
 app.get('/account', (req, res) => {
     res.sendFile(path.join(__dirname, 'design', 'register.html'));
 });
+app.get('/1', (req, res) => {
+    res.sendFile(path.join(__dirname, 'design', 'analysis.html'));
+});
 
-app.get('/account/quest', (req, res) => {
+app.get('/quest', (req, res) => {
     res.sendFile(path.join(__dirname, 'design', 'quest.html'));
 });
+
 
 // for login spotify user
 app.get('/login', (req, res) => {
@@ -101,6 +105,7 @@ app.get('/login', (req, res) => {
         res.send(`Error getting Tokens: ${error}`);
       });
   });
+
 
 // Start the server
 app.listen(port, () => {

@@ -7,4 +7,5 @@ router.get('/question/:questId', questController.getQuestionsForQuest)
 router.get('/answer/:questionId', questController.getAnswerForQuestion)
 router.get('/final/:questId', questController.getFinalsForQuest)
 
+
 module.exports = router

@@ -1,3 +1,4 @@
+
 const db = require('../db')
 
 class QuestController {
@@ -7,9 +8,18 @@ class QuestController {
     }
 
     async getQuestionsForQuest(req, res) {
-        const id = req.params.questId
-        const questions = await db.query('select * from question where id_quest = $1', [id])
+        const questId = req.query.questId
+        const questions = await db.query('select * from question where id_quest = $1', [questId]);
         res.json(questions.rows)
+    }
+
+    async getQuestionWithAnswers(req, res) {
+        const questId = req.query.questId
+        const questionNum = req.query.questionNum
+        const questionId = (questId-1)*4 + parseInt(questionNum)
+        const question_answers = await
+            db.query('SELECT q.id, q.question, jsonb_agg(a.*) AS answers FROM question q LEFT JOIN answer a ON q.id = a.id_question WHERE q.id = $1 GROUP BY q.id, q.question;', [questionId]);
+        res.json(question_answers.rows)
     }
 
     async getAnswerForQuestion(req, res) {
@@ -25,5 +35,6 @@ class QuestController {
     }
 
 }
+
 
 module.exports = new QuestController()
