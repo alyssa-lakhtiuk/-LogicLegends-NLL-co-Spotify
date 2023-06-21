@@ -23,6 +23,10 @@ app.get('/quest', (req, res) => {
     res.sendFile(path.join(__dirname, 'design', 'quest.html'));
 });
 
+app.get('/1', (req, res) => {
+    res.sendFile(path.join(__dirname, 'design', 'analysis.html'));
+});
+
 // Start the server
 app.listen(port, () => {
     console.log(`Server started on port ${port}`);
