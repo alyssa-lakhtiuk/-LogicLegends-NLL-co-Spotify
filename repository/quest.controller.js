@@ -1,3 +1,4 @@
+
 const db = require('../db')
 
 class QuestController {
@@ -34,5 +35,6 @@ class QuestController {
     }
 
 }
+
 
 module.exports = new QuestController()
