@@ -5,6 +5,10 @@ const path = require('path');
 const app = express();
 const port = 8888;
 
+
+//const {setAccessToken, getMyId , getMyEmail, getMyUserName, getUserPlaylists, getListOfCategories,
+//   getPlaylistsForCategory, getPlaylistTracks, getMyTopTracks, getMyTopArtists} = require('./get_spotify_data')
+
 var SpotifyWebApi = require('spotify-web-api-node');
 const scopes = [
     'ugc-image-upload',
@@ -48,7 +52,7 @@ app.get('/', (req, res) => {
 app.get('/account', (req, res) => {
     res.sendFile(path.join(__dirname, 'design', 'register.html'));
 });
-app.get('/1', (req, res) => {
+app.get('/analitics', (req, res) => {
     res.sendFile(path.join(__dirname, 'design', 'analysis.html'));
 });
 
@@ -82,7 +86,8 @@ app.get('/login', (req, res) => {
   
         spotifyApi.setAccessToken(access_token);
         spotifyApi.setRefreshToken(refresh_token);
-  
+        //setAccessToken(access_token)
+        //getMyEmail()  
         console.log('access_token:', access_token);
         console.log('refresh_token:', refresh_token);
   
@@ -98,7 +103,7 @@ app.get('/login', (req, res) => {
 
           spotifyApi.setAccessToken(access_token);
         }, expires_in / 2 * 1000);
-        //res.sendFile(path.join(__dirname, 'design', 'account.html'));   // retirect to account
+        res.sendFile(path.join(__dirname, 'design', 'analysis.html'));   // retirect to analylis.html
       })
       .catch(error => {
         console.error('Error getting Tokens:', error);

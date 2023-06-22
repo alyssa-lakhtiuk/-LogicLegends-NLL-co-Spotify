@@ -7,6 +7,7 @@ const SpotifyWebApi = require('spotify-web-api-node');
 const spotifyApi = new SpotifyWebApi();
 
 
+
 function setAccessToken(accesstoken){
     spotifyApi.setAccessToken(accesstoken);
 }
@@ -39,6 +40,7 @@ async function getMyId() {
 
 async function getMyEmail() {
   const data = await spotifyApi.getMe()
+  //console.log(data.body.email)
   return data.body.email
 }
 
@@ -236,4 +238,11 @@ async function getRecommendationsBasedOnSeeds(seed_artists, min_energy, min_popu
 
 //getRecommendationsBasedOnSeeds(['6mfK6Q2tzLMEchAr0e9Uzu', '4DYFVNKZ1uixa6SQTvzQwJ'], 0.4, 50)
 
-
+// module.exports = {
+//   setAccessToken,
+//   getMyId,
+//   getMyEmail,
+//   getMyUserName,
+//   getUserPlaylists, getListOfCategories,
+//    getPlaylistsForCategory, getPlaylistTracks, getMyTopTracks, getMyTopArtists
+// };
