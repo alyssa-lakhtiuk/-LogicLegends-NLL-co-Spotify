@@ -105,18 +105,29 @@
 
   </style>
     <script>
+
         function changeText() {
-            var element1 = document.getElementById('answer1');
-            var element2 = document.getElementById('answer2');
-            var element3 = document.getElementById('answer3');
-            var element4 = document.getElementById('answer4');
-            var element5 = document.getElementById('testQuestion');
-            element1.innerHTML = 'New Text';
-            element2.innerHTML = 'New Text';
-            element3.innerHTML = 'New Text';
-            element4.innerHTML = 'New Text';
-            element5.innerHTML = 'New Text';
+            var obj = document.getElementById("testQuestion");
+            if (obj.style.display === "none" ) {
+                obj.style.display = "flex";
+            }
+
+                var element1 = document.getElementById('answer1');
+                var element2 = document.getElementById('answer2');
+                var element3 = document.getElementById('answer3');
+                var element4 = document.getElementById('answer4');
+                var element5 = document.getElementById('testQuestion');
+                var element6 = document.getElementById('testName');
+                element1.innerHTML = 'New Text';
+                element2.innerHTML = 'New Text';
+                element3.innerHTML = 'New Text';
+                element4.innerHTML = 'New Text';
+                element5.innerHTML = 'New Text';
+                element6.innerHTML = 'New Text';
+
         }
+
+
     </script>
 </head>
 <body>
@@ -139,38 +150,101 @@
 
     <div class="d-flex align-content-start">
         <div class = "item">
-            <p class="textStyle">test of name</p>
+            <p class="textStyle" id="testName">Choose the test</p>
         </div>
     </div>
 
     <div class = "d-flex align-content-center">
         <div class = "item">
         <div class="col-12">
-            <text class="testQuestion" id="testQuestion">question of test</text>
+            <text class="testQuestion" id="testQuestion" style="display: none;">question of test</text>
         </div>
         </div>
     </div>
 
-        <div class = "d-flex align-content-center">
-            <div class = "buttonItem">
-                <button class = "btn" id ="answer1" onclick = "changeText()">question oneLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</button>
-            </div>
-        </div>
-        <div class = "d-flex align-content-center">
-            <div class = "buttonItem">
-                <button class = "btn" id = "answer2" onclick = "changeText()">question two</button>
-            </div>
-        </div>
-    <div class = "d-flex align-content-center">
-        <div class = "buttonItem">
-            <button class = "btn" id = "answer3" onclick = "changeText()">question three</button>
-        </div>
-    </div>
-    <div class = "d-flex align-content-center">
-        <div class = "buttonItem">
-            <button class = "btn" id = "answer4" onclick = "changeText()">question four</button>
-        </div>
-    </div>
+    <div class="d-block align-content-center" id="buttonContainer"></div>
+    <script>
+        // Array of records from the database
+        var records1 = [
+            { id: 1, text: "Question 1" },
+            { id: 2, text: "Random text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temp" },
+            { id: 3, text: "Question 3" }
+        ];
+        var records2 = [
+            { id: 1, text: "Question " },
+            { id: 2, text: "Question " },
+            { id: 3, text: "Question " }
+        ];
+
+        // Function to generate buttons and change text
+        function generateButtons(records) {
+            var container = document.getElementById("buttonContainer");
+
+            records.forEach(function(record) {
+                var elem = document.createElement("div");
+                elem.className = "row justify-content-center";
+
+                var buttonItem = document.createElement("div");
+                buttonItem.className = "buttonItem";
+
+                var button = document.createElement("button");
+                button.className = "btn";
+
+                button.textContent = record.text;
+
+                var i = 0;
+                button.onclick = function (){
+                    i++;
+                    activateText('Hello!', records1);
+
+                }
+
+                buttonItem.appendChild(button);
+                container.appendChild(buttonItem);
+
+            });
+        }
+
+        function activateText(someText, records){
+            var obj = document.getElementById("testQuestion");
+            if (obj.style.display === "none" ) {
+                obj.style.display = "flex";
+            }
+            var element5 = document.getElementById('testQuestion');
+            element5.innerHTML = someText;
+            deleteButtons();
+            generateButtons(records);
+        }
+        function deleteButtons() {
+            var container = document.getElementById("buttonContainer");
+            container.innerHTML = ""; // Remove all child elements
+        }
+
+
+        // Call the function to generate buttons
+        generateButtons(records2);
+    </script>
+
+<!--        <div class = "d-flex align-content-center">-->
+<!--            <div class = "buttonItem">-->
+<!--                <button class = "btn" id ="answer1" onclick = "changeText()">question oneLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</button>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class = "d-flex align-content-center">-->
+<!--            <div class = "buttonItem">-->
+<!--                <button class = "btn" id = "answer2" onclick = "changeText()">question two</button>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    <div class = "d-flex align-content-center">-->
+<!--        <div class = "buttonItem">-->
+<!--            <button class = "btn" id = "answer3" onclick = "changeText()">question three</button>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div class = "d-flex align-content-center">-->
+<!--        <div class = "buttonItem">-->
+<!--            <button class = "btn" id = "answer4" onclick = "changeText()">question four</button>-->
+<!--        </div>-->
+<!--    </div>-->
 
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
