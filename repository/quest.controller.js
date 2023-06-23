@@ -3,7 +3,11 @@ const db = require('../db')
 
 class QuestController {
     async getQuests(req, res) {
-        const quests = await db.query('select * from quest')
+        const questId = req.query.questId
+        let query = 'select * from quest'
+        if (questId != null) query += ' where id = ' + questId
+
+        const quests = await db.query(query)
         res.json(quests.rows)
     }
 

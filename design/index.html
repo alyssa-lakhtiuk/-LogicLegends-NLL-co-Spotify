@@ -160,9 +160,6 @@
                     </a>
                     <!--      ОСЬ ТУТ МІСЦЕ ДЕ СПИСОК ТЕСТІВ              -->
                     <ul class="dropdown-menu " aria-labelledby="dropdownMenuButton1">
-                        <li><a class="dropdown-item" href="/quest">One test</a></li>
-                        <li><a class="dropdown-item" href="/quest">Two test</a></li>
-                        <li><a class="dropdown-item" href="/quest">Three test</a></li>
                     </ul>
                 </div>
             </li>
@@ -218,6 +215,27 @@
         </div>
     </div>
 </div>
+
+<script>
+
+    async function getQuests() {
+        let response = await fetch('http://localhost:8888/api/quest')
+        let content = await response.json()
+
+        let list = document.querySelector('.dropdown-menu')
+
+        console.log(content)
+
+        for (key in content) {
+            list.innerHTML += '<li><a class="dropdown-item" href="/quest?quest='+ content[key].id + '">'
+                + content[key].name + '</a></li>'
+        }
+
+    }
+
+    getQuests()
+
+</script>
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
