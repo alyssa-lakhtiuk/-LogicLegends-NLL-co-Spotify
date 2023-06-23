@@ -6,8 +6,8 @@ const app = express();
 const port = 8888;
 
 
-//const {setAccessToken, getMyId , getMyEmail, getMyUserName, getUserPlaylists, getListOfCategories,
-//   getPlaylistsForCategory, getPlaylistTracks, getMyTopTracks, getMyTopArtists} = require('./get_spotify_data')
+const {setAccessToken, getMyId , getMyEmail, getMyUserName, getUserPlaylists, getListOfCategories,
+  getPlaylistsForCategory, getPlaylistTracks, getMyTopTracks, getMyTopArtists, getRecommendationsBasedOnSeeds} = require('./get_spotify_data')
 
 var SpotifyWebApi = require('spotify-web-api-node');
 const scopes = [
@@ -52,8 +52,10 @@ app.get('/', (req, res) => {
 app.get('/account', (req, res) => {
     res.sendFile(path.join(__dirname, 'design', 'register.html'));
 });
-app.get('/analitics', (req, res) => {
-    res.sendFile(path.join(__dirname, 'design', 'analysis.html'));
+app.get('/analysis', (req, res) => {
+    setAccessToken(req.query.access_token)
+    getMyEmail()
+    res.status(200).sendFile(path.join(__dirname, 'design', 'analysis.html'));
 });
 
 app.get('/quest', (req, res) => {
@@ -70,6 +72,7 @@ app.get('/login', (req, res) => {
     const error = req.query.error;
     const code = req.query.code;
     const state = req.query.state;
+
   
     if (error) {
       console.error('Callback Error:', error);
@@ -86,15 +89,14 @@ app.get('/login', (req, res) => {
   
         spotifyApi.setAccessToken(access_token);
         spotifyApi.setRefreshToken(refresh_token);
-        //setAccessToken(access_token)
-        //getMyEmail()  
         console.log('access_token:', access_token);
         console.log('refresh_token:', refresh_token);
   
         console.log(
           `Sucessfully retreived access token. Expires in ${expires_in} s.`
         );
-         setInterval(async () => {
+        res.redirect(301,`/analysis?access_token=${access_token}`)
+          setInterval(async () => {
           const data = await spotifyApi.refreshAccessToken();
           const access_token = data.body['access_token'];
   
@@ -103,7 +105,6 @@ app.get('/login', (req, res) => {
 
           spotifyApi.setAccessToken(access_token);
         }, expires_in / 2 * 1000);
-        res.sendFile(path.join(__dirname, 'design', 'analysis.html'));   // retirect to analylis.html
       })
       .catch(error => {
         console.error('Error getting Tokens:', error);
