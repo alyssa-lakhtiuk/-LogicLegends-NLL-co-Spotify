@@ -2,7 +2,7 @@ const { error } = require('console');
 const fs = require('fs');
 const { get } = require('http');
 const SpotifyWebApi = require('spotify-web-api-node');
-let token = "BQCmomJR7IVNIuil9n0LaQ9p1cyVtQLEj01ULgYJHOxT9zOC5MIlngbhk7xafqw24h8XSiSP-ZFDnfjMdbHzLhmmeci-end5We-hUtPSHnBMDdX5Nm2EhmyqUImOHUWFRckUlPqgG5pZxPos35k6J1xzNWUWhzCMBzhGBueSCtfkEhUPw0ufdVU-kcEqyz-psOB5KwwKA0AJAfzuicg8WRGEHa3u3yG7xiw21hWoj1n62UXN84DX0nAecQfJlfzLwquklFvZmohmJzH5nwxRvi_qnMEabU5KNiAV7Fdq2DQP7_mo5YqBJbBLUnAryYuxd0Qo1A3SmyEkTQuQk9fA";
+//let token = "BQCmomJR7IVNIuil9n0LaQ9p1cyVtQLEj01ULgYJHOxT9zOC5MIlngbhk7xafqw24h8XSiSP-ZFDnfjMdbHzLhmmeci-end5We-hUtPSHnBMDdX5Nm2EhmyqUImOHUWFRckUlPqgG5pZxPos35k6J1xzNWUWhzCMBzhGBueSCtfkEhUPw0ufdVU-kcEqyz-psOB5KwwKA0AJAfzuicg8WRGEHa3u3yG7xiw21hWoj1n62UXN84DX0nAecQfJlfzLwquklFvZmohmJzH5nwxRvi_qnMEabU5KNiAV7Fdq2DQP7_mo5YqBJbBLUnAryYuxd0Qo1A3SmyEkTQuQk9fA";
 
 const spotifyApi = new SpotifyWebApi();
 
@@ -71,9 +71,9 @@ async function getUserPlaylists(userId) {
     console.log(playlist)
     playlists.push(playlist)    
   }
-  const playlistsJSON = { playlists }
+  const playlistsJSON = playlists 
   let info = JSON.stringify(playlistsJSON);
-  fs.writeFileSync("userPlaylists"+'.json', info);
+  fs.writeFileSync("design/userPlaylists"+'.json', info);
   return playlists              // palylist.name ;  palylist.id ; playlist.tracks.total (number)
 }                              //(to get traks from playlist use: getPlaylistTracks(playlistid)
 
@@ -87,9 +87,9 @@ async function getListOfCategories() {
     //console.log(category)
     categories.push(category)
   }
-  const listOfCategoriesJSON = { categories }
+  const listOfCategoriesJSON =  categories 
   let info = JSON.stringify(listOfCategoriesJSON);
-  fs.writeFileSync("listOfCategories"+'.json', info);
+  fs.writeFileSync("design/listOfCategories"+'.json', info);
   return categories // category.name ; category.id
 }
 
@@ -103,9 +103,9 @@ async function getPlaylistsForCategory(id_category) {
  for (let playlist of data.body.playlists.items) {
     playlists.push(playlist)
   }
-  const playlistsJSON = { playlists }
+  const playlistsJSON = playlists 
   let info = JSON.stringify(playlistsJSON);
-  fs.writeFileSync("playlistsForCateory"+'.json', info);
+  fs.writeFileSync("design/playlistsForCateory"+'.json', info);
   return playlists // playlist.name ; playlist.id
 }
 
@@ -123,9 +123,9 @@ async function getPlaylistTracks(playlistId) {
   for (let track_obj of data.body.items) {
     tracks.push(track_obj.track);
   }
-  const tracksJSON = { tracks }
+  const tracksJSON = tracks 
   let info = JSON.stringify(tracksJSON);
-  fs.writeFileSync("traksByPlaylist"+'.json', info);
+  fs.writeFileSync("design/traksByPlaylist"+'.json', info);
   return tracks;
 }
 
@@ -138,9 +138,9 @@ async function getMyTopTracks() {
     //console.log(track.name)
     tracks.push(track) 
   }
-  const tracksJSON = { tracks }
+  const tracksJSON =  tracks 
   let info = JSON.stringify(tracksJSON);
-  fs.writeFileSync('topTraks'+'.json', info);
+  fs.writeFileSync('design/topTraks'+'.json', info);
   return tracks  // track.name ; track.id ; track.popularity (spotify rating) ; track.artists[0].name
 }
 
@@ -152,9 +152,9 @@ async function getMyTopArtists() {
  for (let artist of data.body.items) {
     artists.push(artist)
   }
-  const artistsJSON = { artists }
+  const artistsJSON =  artists 
   let info = JSON.stringify(artistsJSON);
-  fs.writeFileSync("topArtists"+'.json', info);
+  fs.writeFileSync("design/topArtists"+'.json', info);
   return artists // artist.name ; artist.id
 }
 // +++++++++++++++++++++++++++++++++++++++++
@@ -225,9 +225,9 @@ async function getRecommendationsBasedOnSeeds(seed_artists, min_energy, min_popu
     recom_tracks.push(track);
     console.log(track.name)
   }
-  const tracksJSON = { tracks }
+  const tracksJSON = tracks 
   let info = JSON.stringify(tracksJSON);
-  fs.writeFileSync("recomemdationTraks"+'.json', info);
+  fs.writeFileSync("design/recomemdationTraks"+'.json', info);
   return recom_tracks // track.name ; track.id; track.artists[0] ; track.popularity ; track.energy
   
 }
