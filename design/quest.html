@@ -98,6 +98,41 @@
             outline: none;
         }
 
+        .btn1 {
+            position: relative;
+            width: auto;
+            height: auto;
+            background: rgba(2, 167, 65, 0.65);
+            border-radius: 20px;
+            align-content: center;
+            justify-content: center;
+            display: inline;
+            outline: none;
+
+            border: #00C24A;
+            text-align: start;
+            font-family: "Nunito", sans-serif;
+            color: white;
+            font-size: 250%;
+
+        }
+
+        .btn1:active {
+            background-color: #FFFFFF;
+            color: black;
+        }
+
+        .btn1:hover {
+            background: aquamarine;
+            color: black;
+        }
+
+        .btn1:focus {
+            background-color: #93c288;
+            color: black;
+            outline: none;
+        }
+
         .item {
             padding: 20px;
         }
@@ -106,26 +141,27 @@
             padding: 5px;
         }
 
-        .dropdown-item {
+        .dropdown-item{
             font-family: "Nunito", sans-serif;
             color: #FFFFFF;
         }
-
-        .dropdown-item:focus {
+        .dropdown-item:focus{
             background-color: #93c288;
             color: black;
             outline: none;
         }
-
-        .dropdown-item:hover {
+        .dropdown-item:hover{
             background-color: #93c288;
 
             color: black
         }
-
-        .dropdown-item:active {
+        .dropdown-item:active{
             background: aquamarine;
             color: black;
+        }
+        .dropdown-menu{
+            font-family: "Nunito", sans-serif;
+            background-color: #3c3f41;
         }
     </style>
 
@@ -278,33 +314,32 @@
 
             var nameOfTest = document.getElementById('testQuestion')
             nameOfTest.innerHTML = 'Congratulation. You are ' + content[maxIndex].text
+            toggleObject();
         }
 
+        function toggleObject() {
+            var obj = document.getElementById("goToMain");
+            if (obj.style.display === "none") {
+                obj.style.display = "flex";
+            }
+        }
+
+        function toMain() {
+
+            // Change the URL to the new address line
+            window.location.href = '/';
+        }
 
     </script>
-
-    <!--        <div class = "d-flex align-content-center">-->
-    <!--            <div class = "buttonItem">-->
-    <!--                <button class = "btn" id ="answer1" onclick = "changeText()">question oneLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</button>-->
-    <!--            </div>-->
-    <!--        </div>-->
-    <!--        <div class = "d-flex align-content-center">-->
-    <!--            <div class = "buttonItem">-->
-    <!--                <button class = "btn" id = "answer2" onclick = "changeText()">question two</button>-->
-    <!--            </div>-->
-    <!--        </div>-->
-    <!--    <div class = "d-flex align-content-center">-->
-    <!--        <div class = "buttonItem">-->
-    <!--            <button class = "btn" id = "answer3" onclick = "changeText()">question three</button>-->
-    <!--        </div>-->
-    <!--    </div>-->
-    <!--    <div class = "d-flex align-content-center">-->
-    <!--        <div class = "buttonItem">-->
-    <!--            <button class = "btn" id = "answer4" onclick = "changeText()">question four</button>-->
-    <!--        </div>-->
-    <!--    </div>-->
+    <div class ="d-flex align-content-right" >
+        <div class = "col-12">
+            <button class = "btn1" style="display: none" id="goToMain" onclick="toMain()">Go to main</button>
+        </div>
+    </div>
 
 </div>
+
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossOrigin="anonymous"></script>
