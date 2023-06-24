@@ -71,9 +71,9 @@ async function getUserPlaylists(userId) {
     console.log(playlist)
     playlists.push(playlist)    
   }
-  const playlistsJSON = { playlists }
+  const playlistsJSON = playlists
   let info = JSON.stringify(playlistsJSON);
-  fs.writeFileSync("userPlaylists"+'.json', info);
+  fs.writeFileSync("design/json/userPlaylists"+'.json', info);
   return playlists              // palylist.name ;  palylist.id ; playlist.tracks.total (number)
 }                              //(to get traks from playlist use: getPlaylistTracks(playlistid)
 
@@ -87,9 +87,9 @@ async function getListOfCategories() {
     //console.log(category)
     categories.push(category)
   }
-  const listOfCategoriesJSON = { categories }
+  const listOfCategoriesJSON = categories
   let info = JSON.stringify(listOfCategoriesJSON);
-  fs.writeFileSync("listOfCategories"+'.json', info);
+  fs.writeFileSync("design/json/listOfCategories"+'.json', info);
   return categories // category.name ; category.id
 }
 
@@ -103,9 +103,9 @@ async function getPlaylistsForCategory(id_category) {
  for (let playlist of data.body.playlists.items) {
     playlists.push(playlist)
   }
-  const playlistsJSON = { playlists }
+  const playlistsJSON = playlists
   let info = JSON.stringify(playlistsJSON);
-  fs.writeFileSync("playlistsForCateory"+'.json', info);
+  fs.writeFileSync("design/json/playlistsForCateory"+'.json', info);
   return playlists // playlist.name ; playlist.id
 }
 
@@ -123,9 +123,9 @@ async function getPlaylistTracks(playlistId) {
   for (let track_obj of data.body.items) {
     tracks.push(track_obj.track);
   }
-  const tracksJSON = { tracks }
+  const tracksJSON = tracks
   let info = JSON.stringify(tracksJSON);
-  fs.writeFileSync("traksByPlaylist"+'.json', info);
+  fs.writeFileSync("design/json/traksByPlaylist"+'.json', info);
   return tracks;
 }
 
@@ -138,9 +138,9 @@ async function getMyTopTracks() {
     //console.log(track.name)
     tracks.push(track) 
   }
-  const tracksJSON = { tracks }
+  const tracksJSON = tracks
   let info = JSON.stringify(tracksJSON);
-  fs.writeFileSync('topTraks'+'.json', info);
+  fs.writeFileSync('design/json/topTracks'+'.json', info);
   return tracks  // track.name ; track.id ; track.popularity (spotify rating) ; track.artists[0].name
 }
 
@@ -152,9 +152,9 @@ async function getMyTopArtists() {
  for (let artist of data.body.items) {
     artists.push(artist)
   }
-  const artistsJSON = { artists }
+  const artistsJSON = artists
   let info = JSON.stringify(artistsJSON);
-  fs.writeFileSync("topArtists"+'.json', info);
+  fs.writeFileSync("design/json/topArtists"+'.json', info);
   return artists // artist.name ; artist.id
 }
 // +++++++++++++++++++++++++++++++++++++++++
