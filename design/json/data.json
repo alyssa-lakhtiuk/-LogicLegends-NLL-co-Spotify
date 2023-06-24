@@ -1,0 +1,822 @@
+[
+      {
+        "collaborative": false,
+        "description": "HARD DANCE QUEER PARTY BASED IN FLORIANOPOLIS - BRAZIL | ELECTRONIC MUSIC FOR THE LGBTQIA+",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/0skg6srHQFPQrwke6D7gPL"
+        },
+        "href": "https://api.spotify.com/v1/playlists/0skg6srHQFPQrwke6D7gPL",
+        "id": "0skg6srHQFPQrwke6D7gPL",
+        "images": [
+          {
+            "url": "https://i.scdn.co/image/ab67706c0000bebb73fae6f29dd0c148358874c0",
+            "height": null,
+            "width": null
+          }
+        ],
+        "name": "SLUT RAVE",
+        "owner": {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/31ngocvdws6fftrjmabpxykyf64u"
+          },
+          "href": "https://api.spotify.com/v1/users/31ngocvdws6fftrjmabpxykyf64u",
+          "id": "31ngocvdws6fftrjmabpxykyf64u",
+          "type": "user",
+          "uri": "spotify:user:31ngocvdws6fftrjmabpxykyf64u",
+          "display_name": "SLUT RAVE"
+        },
+        "public": false,
+        "snapshot_id": "NDI0LGY5NzM0Y2IzOTZhMzFmOWI3MzBhNWQzNTA1MmZiMGY3ZDFkNGU2MWE=",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/0skg6srHQFPQrwke6D7gPL/tracks",
+          "total": 148
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:0skg6srHQFPQrwke6D7gPL",
+        "primary_color": null
+      },
+      {
+        "collaborative": false,
+        "description": "",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/03BpY65rasfYFFCBMjhNUw"
+        },
+        "href": "https://api.spotify.com/v1/playlists/03BpY65rasfYFFCBMjhNUw",
+        "id": "03BpY65rasfYFFCBMjhNUw",
+        "images": [
+          {
+            "url": "https://mosaic.scdn.co/640/ab67616d0000b27338837412ba8f22822a069f15ab67616d0000b2736bbd5c58e7be013e8e83dcb3ab67616d0000b273e390f0d497f2efe9d48b653aab67616d0000b273fb82771dc51da0656887fb8f",
+            "height": 640,
+            "width": 640
+          },
+          {
+            "url": "https://mosaic.scdn.co/300/ab67616d0000b27338837412ba8f22822a069f15ab67616d0000b2736bbd5c58e7be013e8e83dcb3ab67616d0000b273e390f0d497f2efe9d48b653aab67616d0000b273fb82771dc51da0656887fb8f",
+            "height": 300,
+            "width": 300
+          },
+          {
+            "url": "https://mosaic.scdn.co/60/ab67616d0000b27338837412ba8f22822a069f15ab67616d0000b2736bbd5c58e7be013e8e83dcb3ab67616d0000b273e390f0d497f2efe9d48b653aab67616d0000b273fb82771dc51da0656887fb8f",
+            "height": 60,
+            "width": 60
+          }
+        ],
+        "name": "В‘їбатися башкою",
+        "owner": {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/31cxu5k7eqdcmcfydtnovmnfskcq"
+          },
+          "href": "https://api.spotify.com/v1/users/31cxu5k7eqdcmcfydtnovmnfskcq",
+          "id": "31cxu5k7eqdcmcfydtnovmnfskcq",
+          "type": "user",
+          "uri": "spotify:user:31cxu5k7eqdcmcfydtnovmnfskcq",
+          "display_name": "Anastasiia Parkhomenko"
+        },
+        "public": false,
+        "snapshot_id": "NjUsM2JjMmViZjViZmU3YmQzNGZjYTVhMjEwNDA2YzdhZmJkNjlmNmVhZA==",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/03BpY65rasfYFFCBMjhNUw/tracks",
+          "total": 63
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:03BpY65rasfYFFCBMjhNUw",
+        "primary_color": null
+      },
+      {
+        "collaborative": false,
+        "description": "Catch all the latest music from artists you follow, plus new singles picked for you. Updates every Friday.",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/37i9dQZEVXbdI65ayCvWXP"
+        },
+        "href": "https://api.spotify.com/v1/playlists/37i9dQZEVXbdI65ayCvWXP",
+        "id": "37i9dQZEVXbdI65ayCvWXP",
+        "images": [
+          {
+            "url": "https://newjams-images.scdn.co/image/ab6764780000c480/dt/v3/release-radar/ab6761610000e5eb065faf07b0343e97bf3fba57/en",
+            "height": null,
+            "width": null
+          }
+        ],
+        "name": "Release Radar",
+        "owner": {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/spotify"
+          },
+          "href": "https://api.spotify.com/v1/users/spotify",
+          "id": "spotify",
+          "type": "user",
+          "uri": "spotify:user:spotify",
+          "display_name": "Spotify"
+        },
+        "public": false,
+        "snapshot_id": "MCwwMDAwMDAwMDgzMDU2NTJjOWFmYmExMDU4YmE0ZTkxMmM3YmE5NTY0",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/37i9dQZEVXbdI65ayCvWXP/tracks",
+          "total": 30
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:37i9dQZEVXbdI65ayCvWXP",
+        "primary_color": null
+      },
+      {
+        "collaborative": false,
+        "description": "It's just us—and this awesome alt soundtrack.",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX6mvEU1S6INL"
+        },
+        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX6mvEU1S6INL",
+        "id": "37i9dQZF1DX6mvEU1S6INL",
+        "images": [
+          {
+            "url": "https://i.scdn.co/image/ab67706f000000031aede1ba8a54598a84c1771f",
+            "height": null,
+            "width": null
+          }
+        ],
+        "name": "You & Me",
+        "owner": {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/spotify"
+          },
+          "href": "https://api.spotify.com/v1/users/spotify",
+          "id": "spotify",
+          "type": "user",
+          "uri": "spotify:user:spotify",
+          "display_name": "Spotify"
+        },
+        "public": false,
+        "snapshot_id": "MTY4NjkyMDM1MCwwMDAwMDAwMDVmY2M4ODMxZGU1YTI3M2MyNGRjZDQwZjZjNDI3YTgx",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX6mvEU1S6INL/tracks",
+          "total": 100
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:37i9dQZF1DX6mvEU1S6INL",
+        "primary_color": null
+      },
+      {
+        "collaborative": false,
+        "description": "",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/7B1TUJjtkUFlOIQYR13uxo"
+        },
+        "href": "https://api.spotify.com/v1/playlists/7B1TUJjtkUFlOIQYR13uxo",
+        "id": "7B1TUJjtkUFlOIQYR13uxo",
+        "images": [
+          {
+            "url": "https://mosaic.scdn.co/640/ab67616d0000b2734a72f7ae0082704e32ff2ba3ab67616d0000b2737239a31a351024e6d666754dab67616d0000b273972732b30a8db9ec50dbedebab67616d0000b2739d9d54d8ff613feac743502d",
+            "height": 640,
+            "width": 640
+          },
+          {
+            "url": "https://mosaic.scdn.co/300/ab67616d0000b2734a72f7ae0082704e32ff2ba3ab67616d0000b2737239a31a351024e6d666754dab67616d0000b273972732b30a8db9ec50dbedebab67616d0000b2739d9d54d8ff613feac743502d",
+            "height": 300,
+            "width": 300
+          },
+          {
+            "url": "https://mosaic.scdn.co/60/ab67616d0000b2734a72f7ae0082704e32ff2ba3ab67616d0000b2737239a31a351024e6d666754dab67616d0000b273972732b30a8db9ec50dbedebab67616d0000b2739d9d54d8ff613feac743502d",
+            "height": 60,
+            "width": 60
+          }
+        ],
+        "name": "Giant Rooks",
+        "owner": {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/hjiyifjepqx57rhzx1llkr8rm"
+          },
+          "href": "https://api.spotify.com/v1/users/hjiyifjepqx57rhzx1llkr8rm",
+          "id": "hjiyifjepqx57rhzx1llkr8rm",
+          "type": "user",
+          "uri": "spotify:user:hjiyifjepqx57rhzx1llkr8rm",
+          "display_name": "Alyssa"
+        },
+        "public": false,
+        "snapshot_id": "MTgsMGI3NzQ3ODdjOTBmM2FmYWZkZWZjMGQzNzM2Y2MxYTAwZWZmYTc2Mg==",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/7B1TUJjtkUFlOIQYR13uxo/tracks",
+          "total": 16
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:7B1TUJjtkUFlOIQYR13uxo",
+        "primary_color": null
+      },
+      {
+        "collaborative": false,
+        "description": "",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/20Ry6SN28TD1aQawLLhL93"
+        },
+        "href": "https://api.spotify.com/v1/playlists/20Ry6SN28TD1aQawLLhL93",
+        "id": "20Ry6SN28TD1aQawLLhL93",
+        "images": [
+          {
+            "url": "https://i.scdn.co/image/ab67616d0000b2733e31d6ba1bef4593ecc763b3",
+            "height": 640,
+            "width": 640
+          }
+        ],
+        "name": "Piano/Acoustic Versions",
+        "owner": {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/hjiyifjepqx57rhzx1llkr8rm"
+          },
+          "href": "https://api.spotify.com/v1/users/hjiyifjepqx57rhzx1llkr8rm",
+          "id": "hjiyifjepqx57rhzx1llkr8rm",
+          "type": "user",
+          "uri": "spotify:user:hjiyifjepqx57rhzx1llkr8rm",
+          "display_name": "Alyssa"
+        },
+        "public": false,
+        "snapshot_id": "NSw2OWMxNDAxY2E2ZTRkMmQwYjRlYWQ2NmE0NGI4YzIzMmJlOWFkNzEx",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/20Ry6SN28TD1aQawLLhL93/tracks",
+          "total": 3
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:20Ry6SN28TD1aQawLLhL93",
+        "primary_color": null
+      },
+      {
+        "collaborative": false,
+        "description": "",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/0oTPueJdyiZZvgmBT4zS8k"
+        },
+        "href": "https://api.spotify.com/v1/playlists/0oTPueJdyiZZvgmBT4zS8k",
+        "id": "0oTPueJdyiZZvgmBT4zS8k",
+        "images": [
+          {
+            "url": "https://mosaic.scdn.co/640/ab67616d0000b273269bf29fb0959fd9596621f8ab67616d0000b273545ffdc66b9829321cca810bab67616d0000b2737670c004fcef8edd9663a34fab67616d0000b273c4d00cac55ae1b4598c9bc90",
+            "height": 640,
+            "width": 640
+          },
+          {
+            "url": "https://mosaic.scdn.co/300/ab67616d0000b273269bf29fb0959fd9596621f8ab67616d0000b273545ffdc66b9829321cca810bab67616d0000b2737670c004fcef8edd9663a34fab67616d0000b273c4d00cac55ae1b4598c9bc90",
+            "height": 300,
+            "width": 300
+          },
+          {
+            "url": "https://mosaic.scdn.co/60/ab67616d0000b273269bf29fb0959fd9596621f8ab67616d0000b273545ffdc66b9829321cca810bab67616d0000b2737670c004fcef8edd9663a34fab67616d0000b273c4d00cac55ae1b4598c9bc90",
+            "height": 60,
+            "width": 60
+          }
+        ],
+        "name": "Piano Versions",
+        "owner": {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/chezmanurest"
+          },
+          "href": "https://api.spotify.com/v1/users/chezmanurest",
+          "id": "chezmanurest",
+          "type": "user",
+          "uri": "spotify:user:chezmanurest",
+          "display_name": "Sofia Pereyra"
+        },
+        "public": false,
+        "snapshot_id": "MTEzLGE0MTU0ZmY1YjMxOTBjMGNmMTlmZTlmMjc5OTE4MTZjOTY3ZjFkZWM=",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/0oTPueJdyiZZvgmBT4zS8k/tracks",
+          "total": 115
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:0oTPueJdyiZZvgmBT4zS8k",
+        "primary_color": null
+      },
+      {
+        "collaborative": false,
+        "description": "",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/17yDBiqCbB4sJSRkOWB5tE"
+        },
+        "href": "https://api.spotify.com/v1/playlists/17yDBiqCbB4sJSRkOWB5tE",
+        "id": "17yDBiqCbB4sJSRkOWB5tE",
+        "images": [
+          {
+            "url": "https://mosaic.scdn.co/640/ab67616d0000b2730f3661d1ead65b628e037b31ab67616d0000b2732a9e5743f2d7c93c43fee849ab67616d0000b2739f554ddb6a1f56ab3af63854ab67616d0000b273afbc822549a43d4aadaf7314",
+            "height": 640,
+            "width": 640
+          },
+          {
+            "url": "https://mosaic.scdn.co/300/ab67616d0000b2730f3661d1ead65b628e037b31ab67616d0000b2732a9e5743f2d7c93c43fee849ab67616d0000b2739f554ddb6a1f56ab3af63854ab67616d0000b273afbc822549a43d4aadaf7314",
+            "height": 300,
+            "width": 300
+          },
+          {
+            "url": "https://mosaic.scdn.co/60/ab67616d0000b2730f3661d1ead65b628e037b31ab67616d0000b2732a9e5743f2d7c93c43fee849ab67616d0000b2739f554ddb6a1f56ab3af63854ab67616d0000b273afbc822549a43d4aadaf7314",
+            "height": 60,
+            "width": 60
+          }
+        ],
+        "name": "♥ Liked Songs ♥",
+        "owner": {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/hjiyifjepqx57rhzx1llkr8rm"
+          },
+          "href": "https://api.spotify.com/v1/users/hjiyifjepqx57rhzx1llkr8rm",
+          "id": "hjiyifjepqx57rhzx1llkr8rm",
+          "type": "user",
+          "uri": "spotify:user:hjiyifjepqx57rhzx1llkr8rm",
+          "display_name": "Alyssa"
+        },
+        "public": false,
+        "snapshot_id": "MjgzLDRmM2VlMDU4YmRlZjdlODc0MTVlOTVlZGU1MDVjNGE3YzQwODE2YjQ=",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/17yDBiqCbB4sJSRkOWB5tE/tracks",
+          "total": 241
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:17yDBiqCbB4sJSRkOWB5tE",
+        "primary_color": null
+      },
+      {
+        "collaborative": false,
+        "description": "",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/4WPfnXqeR8qK8EBBkIcmz2"
+        },
+        "href": "https://api.spotify.com/v1/playlists/4WPfnXqeR8qK8EBBkIcmz2",
+        "id": "4WPfnXqeR8qK8EBBkIcmz2",
+        "images": [
+          {
+            "url": "https://i.scdn.co/image/ab67616d0000b273aafd1a955eda9a0f8bbf50a1",
+            "height": 640,
+            "width": 640
+          }
+        ],
+        "name": "Instrumentals",
+        "owner": {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/hjiyifjepqx57rhzx1llkr8rm"
+          },
+          "href": "https://api.spotify.com/v1/users/hjiyifjepqx57rhzx1llkr8rm",
+          "id": "hjiyifjepqx57rhzx1llkr8rm",
+          "type": "user",
+          "uri": "spotify:user:hjiyifjepqx57rhzx1llkr8rm",
+          "display_name": "Alyssa"
+        },
+        "public": false,
+        "snapshot_id": "NSxiNjBkMThlNjQ1MmNmNGU4NGRkOTEzY2NmMGU2MGVjMjg3ZWRjNmIx",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/4WPfnXqeR8qK8EBBkIcmz2/tracks",
+          "total": 3
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:4WPfnXqeR8qK8EBBkIcmz2",
+        "primary_color": null
+      },
+      {
+        "collaborative": false,
+        "description": "",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/1U06BY9UwmxdtDC0pGL6Op"
+        },
+        "href": "https://api.spotify.com/v1/playlists/1U06BY9UwmxdtDC0pGL6Op",
+        "id": "1U06BY9UwmxdtDC0pGL6Op",
+        "images": [
+          {
+            "url": "https://mosaic.scdn.co/640/ab67616d0000b27338837412ba8f22822a069f15ab67616d0000b273832f747b8b2d5c9a71f4a97fab67616d0000b2739a0e7b9fbcdc941eda253f8cab67616d0000b273aa72d2973fbfb12d7bf32edb",
+            "height": 640,
+            "width": 640
+          },
+          {
+            "url": "https://mosaic.scdn.co/300/ab67616d0000b27338837412ba8f22822a069f15ab67616d0000b273832f747b8b2d5c9a71f4a97fab67616d0000b2739a0e7b9fbcdc941eda253f8cab67616d0000b273aa72d2973fbfb12d7bf32edb",
+            "height": 300,
+            "width": 300
+          },
+          {
+            "url": "https://mosaic.scdn.co/60/ab67616d0000b27338837412ba8f22822a069f15ab67616d0000b273832f747b8b2d5c9a71f4a97fab67616d0000b2739a0e7b9fbcdc941eda253f8cab67616d0000b273aa72d2973fbfb12d7bf32edb",
+            "height": 60,
+            "width": 60
+          }
+        ],
+        "name": "Helsinki",
+        "owner": {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/hjiyifjepqx57rhzx1llkr8rm"
+          },
+          "href": "https://api.spotify.com/v1/users/hjiyifjepqx57rhzx1llkr8rm",
+          "id": "hjiyifjepqx57rhzx1llkr8rm",
+          "type": "user",
+          "uri": "spotify:user:hjiyifjepqx57rhzx1llkr8rm",
+          "display_name": "Alyssa"
+        },
+        "public": false,
+        "snapshot_id": "NTUsZmZlOTBiNjQwNGJiYzU5MGVhNzdiM2Q0MGFlY2ZkYTUzNzA0Yjc3MQ==",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/1U06BY9UwmxdtDC0pGL6Op/tracks",
+          "total": 51
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:1U06BY9UwmxdtDC0pGL6Op",
+        "primary_color": null
+      },
+      {
+        "collaborative": false,
+        "description": "Bring Me The Horizon, Asking Alexandria, Pierce The Veil тощо",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/37i9dQZF1E35p8bvsfhbHs"
+        },
+        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1E35p8bvsfhbHs",
+        "id": "37i9dQZF1E35p8bvsfhbHs",
+        "images": [
+          {
+            "url": "https://dailymix-images.scdn.co/v2/img/ab6761610000e5ebad65800f55f7a8d7d917624b/5/uk/large",
+            "height": null,
+            "width": null
+          }
+        ],
+        "name": "Мікс дня 5",
+        "owner": {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/spotify"
+          },
+          "href": "https://api.spotify.com/v1/users/spotify",
+          "id": "spotify",
+          "type": "user",
+          "uri": "spotify:user:spotify",
+          "display_name": "Spotify"
+        },
+        "public": false,
+        "snapshot_id": "MTY4NzUwNDA5MywwMDAwMDAwMDg0OTY2OWUyZDk0NjA1ZDUxMjZiYzMzZGI2NWFkOWM4",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/37i9dQZF1E35p8bvsfhbHs/tracks",
+          "total": 50
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:37i9dQZF1E35p8bvsfhbHs",
+        "primary_color": null
+      },
+      {
+        "collaborative": false,
+        "description": "hometown & young, Nothing But Thieves, Dead Poet Society тощо",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/37i9dQZF1E38yqvUNluoaU"
+        },
+        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1E38yqvUNluoaU",
+        "id": "37i9dQZF1E38yqvUNluoaU",
+        "images": [
+          {
+            "url": "https://dailymix-images.scdn.co/v2/img/ab6761610000e5ebaa4db9b68f517b15b4cf4553/1/uk/large",
+            "height": null,
+            "width": null
+          }
+        ],
+        "name": "Мікс дня 1",
+        "owner": {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/spotify"
+          },
+          "href": "https://api.spotify.com/v1/users/spotify",
+          "id": "spotify",
+          "type": "user",
+          "uri": "spotify:user:spotify",
+          "display_name": "Spotify"
+        },
+        "public": false,
+        "snapshot_id": "MTY4NzUwNDA5MywwMDAwMDAwMDgwMTA4ZDE0YzNhODNhYzNkODhmZjJmYTUxYzY2ZDYw",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/37i9dQZF1E38yqvUNluoaU/tracks",
+          "total": 50
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:37i9dQZF1E38yqvUNluoaU",
+        "primary_color": null
+      },
+      {
+        "collaborative": false,
+        "description": "Мікс музики: Alyssa та Ihor. Оновлюється щодня.",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/37i9dQZF1EJMaXXrkdZYkP"
+        },
+        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1EJMaXXrkdZYkP",
+        "id": "37i9dQZF1EJMaXXrkdZYkP",
+        "images": [
+          {
+            "url": "https://blend-playlist-covers.spotifycdn.com/v2/blend_LARGE-azure-pink-uk-ua.jpg",
+            "height": null,
+            "width": null
+          }
+        ],
+        "name": "Ihor та Alyssa",
+        "owner": {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/spotify"
+          },
+          "href": "https://api.spotify.com/v1/users/spotify",
+          "id": "spotify",
+          "type": "user",
+          "uri": "spotify:user:spotify",
+          "display_name": "Spotify"
+        },
+        "public": false,
+        "snapshot_id": "MCwwMDAwMDAwMDNmMzBlNWQxNzg3OGZiZWQ0ZDliYjQzODMzODVmZWYy",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/37i9dQZF1EJMaXXrkdZYkP/tracks",
+          "total": 50
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:37i9dQZF1EJMaXXrkdZYkP",
+        "primary_color": null
+      },
+      {
+        "collaborative": false,
+        "description": "",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/1RcTFXuIK4UduOUEth8eWr"
+        },
+        "href": "https://api.spotify.com/v1/playlists/1RcTFXuIK4UduOUEth8eWr",
+        "id": "1RcTFXuIK4UduOUEth8eWr",
+        "images": [
+          {
+            "url": "https://mosaic.scdn.co/640/ab67616d0000b273151c81dfeab03b4483394cc0ab67616d0000b273e359bd02a639a4d01b8241aeab67616d0000b273efe2a536761d4f8e8401ae62ab67616d0000b273fdd772158c3af54caf44879b",
+            "height": 640,
+            "width": 640
+          },
+          {
+            "url": "https://mosaic.scdn.co/300/ab67616d0000b273151c81dfeab03b4483394cc0ab67616d0000b273e359bd02a639a4d01b8241aeab67616d0000b273efe2a536761d4f8e8401ae62ab67616d0000b273fdd772158c3af54caf44879b",
+            "height": 300,
+            "width": 300
+          },
+          {
+            "url": "https://mosaic.scdn.co/60/ab67616d0000b273151c81dfeab03b4483394cc0ab67616d0000b273e359bd02a639a4d01b8241aeab67616d0000b273efe2a536761d4f8e8401ae62ab67616d0000b273fdd772158c3af54caf44879b",
+            "height": 60,
+            "width": 60
+          }
+        ],
+        "name": "ТО РІЗДВО🎅",
+        "owner": {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/316xdbggs2wybdqmcrgd5bursee4"
+          },
+          "href": "https://api.spotify.com/v1/users/316xdbggs2wybdqmcrgd5bursee4",
+          "id": "316xdbggs2wybdqmcrgd5bursee4",
+          "type": "user",
+          "uri": "spotify:user:316xdbggs2wybdqmcrgd5bursee4",
+          "display_name": "Ihor Shudra"
+        },
+        "public": false,
+        "snapshot_id": "MTUsZGVhM2ZkNzYwNWMzYTQyN2FhYWNhNzUzYzNmOWQ0ZGZhZTZjZmM0ZA==",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/1RcTFXuIK4UduOUEth8eWr/tracks",
+          "total": 14
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:1RcTFXuIK4UduOUEth8eWr",
+        "primary_color": null
+      },
+      {
+        "collaborative": false,
+        "description": "",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/0AdsM2tOf7Kttbv1W6B9Sq"
+        },
+        "href": "https://api.spotify.com/v1/playlists/0AdsM2tOf7Kttbv1W6B9Sq",
+        "id": "0AdsM2tOf7Kttbv1W6B9Sq",
+        "images": [
+          {
+            "url": "https://mosaic.scdn.co/640/ab67616d0000b27346d2a4d667c2e75cfa716fc8ab67616d0000b27374c1560b64750a1774495144ab67616d0000b273c8a57e4aecd133175d770d27ab67616d0000b273f633b71861897348253993f4",
+            "height": 640,
+            "width": 640
+          },
+          {
+            "url": "https://mosaic.scdn.co/300/ab67616d0000b27346d2a4d667c2e75cfa716fc8ab67616d0000b27374c1560b64750a1774495144ab67616d0000b273c8a57e4aecd133175d770d27ab67616d0000b273f633b71861897348253993f4",
+            "height": 300,
+            "width": 300
+          },
+          {
+            "url": "https://mosaic.scdn.co/60/ab67616d0000b27346d2a4d667c2e75cfa716fc8ab67616d0000b27374c1560b64750a1774495144ab67616d0000b273c8a57e4aecd133175d770d27ab67616d0000b273f633b71861897348253993f4",
+            "height": 60,
+            "width": 60
+          }
+        ],
+        "name": "My lovely one",
+        "owner": {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/hjiyifjepqx57rhzx1llkr8rm"
+          },
+          "href": "https://api.spotify.com/v1/users/hjiyifjepqx57rhzx1llkr8rm",
+          "id": "hjiyifjepqx57rhzx1llkr8rm",
+          "type": "user",
+          "uri": "spotify:user:hjiyifjepqx57rhzx1llkr8rm",
+          "display_name": "Alyssa"
+        },
+        "public": false,
+        "snapshot_id": "MjksZDRmY2IwNjgxYWU5ZjBjNDU1ZGU2NDhkNzIzZDVlMDNkNTg3Mjk4NA==",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/0AdsM2tOf7Kttbv1W6B9Sq/tracks",
+          "total": 25
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:0AdsM2tOf7Kttbv1W6B9Sq",
+        "primary_color": null
+      },
+      {
+        "collaborative": false,
+        "description": "",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/45xzX0ob4Zj7v0OI5DUJ9P"
+        },
+        "href": "https://api.spotify.com/v1/playlists/45xzX0ob4Zj7v0OI5DUJ9P",
+        "id": "45xzX0ob4Zj7v0OI5DUJ9P",
+        "images": [
+          {
+            "url": "https://mosaic.scdn.co/640/ab67616d0000b27314030d39d060db78d004f2edab67616d0000b273755b5dddd6914d45ce327a39ab67616d0000b273ab0021560ff11309c3aa603cab67616d0000b273f633b71861897348253993f4",
+            "height": 640,
+            "width": 640
+          },
+          {
+            "url": "https://mosaic.scdn.co/300/ab67616d0000b27314030d39d060db78d004f2edab67616d0000b273755b5dddd6914d45ce327a39ab67616d0000b273ab0021560ff11309c3aa603cab67616d0000b273f633b71861897348253993f4",
+            "height": 300,
+            "width": 300
+          },
+          {
+            "url": "https://mosaic.scdn.co/60/ab67616d0000b27314030d39d060db78d004f2edab67616d0000b273755b5dddd6914d45ce327a39ab67616d0000b273ab0021560ff11309c3aa603cab67616d0000b273f633b71861897348253993f4",
+            "height": 60,
+            "width": 60
+          }
+        ],
+        "name": "Sex on Fire",
+        "owner": {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/316xdbggs2wybdqmcrgd5bursee4"
+          },
+          "href": "https://api.spotify.com/v1/users/316xdbggs2wybdqmcrgd5bursee4",
+          "id": "316xdbggs2wybdqmcrgd5bursee4",
+          "type": "user",
+          "uri": "spotify:user:316xdbggs2wybdqmcrgd5bursee4",
+          "display_name": "Ihor Shudra"
+        },
+        "public": false,
+        "snapshot_id": "OCwzNjQ4MzRkYzUxNjFhNTI5MDA4YmNlOWNjMDMwYjM1NjVlOTM4ZWU3",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/45xzX0ob4Zj7v0OI5DUJ9P/tracks",
+          "total": 7
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:45xzX0ob4Zj7v0OI5DUJ9P",
+        "primary_color": null
+      },
+      {
+        "collaborative": false,
+        "description": "",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/7awwkvFjBzZupKCyRUQudI"
+        },
+        "href": "https://api.spotify.com/v1/playlists/7awwkvFjBzZupKCyRUQudI",
+        "id": "7awwkvFjBzZupKCyRUQudI",
+        "images": [
+          {
+            "url": "https://i.scdn.co/image/ab67706c0000bebb48053da7f12457b548e8a215",
+            "height": null,
+            "width": null
+          }
+        ],
+        "name": "Адекватний CoffeeDoor",
+        "owner": {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/hjiyifjepqx57rhzx1llkr8rm"
+          },
+          "href": "https://api.spotify.com/v1/users/hjiyifjepqx57rhzx1llkr8rm",
+          "id": "hjiyifjepqx57rhzx1llkr8rm",
+          "type": "user",
+          "uri": "spotify:user:hjiyifjepqx57rhzx1llkr8rm",
+          "display_name": "Alyssa"
+        },
+        "public": true,
+        "snapshot_id": "MTIsOThlNWZhYjk1NjA0ZjhhODFlMWQ5NmJhZWRmY2M4NDYzMGJiYzM2Nw==",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/7awwkvFjBzZupKCyRUQudI/tracks",
+          "total": 9
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:7awwkvFjBzZupKCyRUQudI",
+        "primary_color": null
+      },
+      {
+        "collaborative": false,
+        "description": "Spotify Wrapped presents the songs that you loved most this year.",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/37i9dQZF1F0sijgNaJdgit"
+        },
+        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1F0sijgNaJdgit",
+        "id": "37i9dQZF1F0sijgNaJdgit",
+        "images": [
+          {
+            "url": "https://wrapped-images.spotifycdn.com/image/yts-2022/large/your-top-songs-2022_large_en.jpg",
+            "height": null,
+            "width": null
+          }
+        ],
+        "name": "Your Top Songs 2022",
+        "owner": {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/spotify"
+          },
+          "href": "https://api.spotify.com/v1/users/spotify",
+          "id": "spotify",
+          "type": "user",
+          "uri": "spotify:user:spotify",
+          "display_name": "Spotify"
+        },
+        "public": false,
+        "snapshot_id": "MTY2OTkwODk2MiwwMDAwMDAwMGExMjYwYjE4NmU4YjYyOWU1MWRjOTdiMDQ3M2NhYjI1",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/37i9dQZF1F0sijgNaJdgit/tracks",
+          "total": 101
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:37i9dQZF1F0sijgNaJdgit",
+        "primary_color": null
+      },
+      {
+        "collaborative": false,
+        "description": "",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/38k1gvsls5tPHBgnsk1Puk"
+        },
+        "href": "https://api.spotify.com/v1/playlists/38k1gvsls5tPHBgnsk1Puk",
+        "id": "38k1gvsls5tPHBgnsk1Puk",
+        "images": [
+          {
+            "url": "https://mosaic.scdn.co/640/ab67616d0000b2738265a736a1eb838ad5a0b921ab67616d0000b27389c39ba1acdf33ed7acd3867ab67616d0000b273d11188025d684f93f8cc1260ab67616d0000b273ee14a6d816e596e176575962",
+            "height": 640,
+            "width": 640
+          },
+          {
+            "url": "https://mosaic.scdn.co/300/ab67616d0000b2738265a736a1eb838ad5a0b921ab67616d0000b27389c39ba1acdf33ed7acd3867ab67616d0000b273d11188025d684f93f8cc1260ab67616d0000b273ee14a6d816e596e176575962",
+            "height": 300,
+            "width": 300
+          },
+          {
+            "url": "https://mosaic.scdn.co/60/ab67616d0000b2738265a736a1eb838ad5a0b921ab67616d0000b27389c39ba1acdf33ed7acd3867ab67616d0000b273d11188025d684f93f8cc1260ab67616d0000b273ee14a6d816e596e176575962",
+            "height": 60,
+            "width": 60
+          }
+        ],
+        "name": "chill",
+        "owner": {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/hjiyifjepqx57rhzx1llkr8rm"
+          },
+          "href": "https://api.spotify.com/v1/users/hjiyifjepqx57rhzx1llkr8rm",
+          "id": "hjiyifjepqx57rhzx1llkr8rm",
+          "type": "user",
+          "uri": "spotify:user:hjiyifjepqx57rhzx1llkr8rm",
+          "display_name": "Alyssa"
+        },
+        "public": false,
+        "snapshot_id": "MTMsMTFiYmY5MDA5NWU3ZjZkZDE3MzEwMWM5Yjc0NDEyZDkwZGEzMTI2MQ==",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/38k1gvsls5tPHBgnsk1Puk/tracks",
+          "total": 10
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:38k1gvsls5tPHBgnsk1Puk",
+        "primary_color": null
+      },
+      {
+        "collaborative": false,
+        "description": "",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/1H3rcvbJdHyoq01HqiE8D8"
+        },
+        "href": "https://api.spotify.com/v1/playlists/1H3rcvbJdHyoq01HqiE8D8",
+        "id": "1H3rcvbJdHyoq01HqiE8D8",
+        "images": [
+          {
+            "url": "https://mosaic.scdn.co/640/ab67616d0000b2731f1c3bd7f04475e8291292ddab67616d0000b2735be3240e6d06ced53544a437ab67616d0000b273634c7a3b895a270f57fbaa88ab67616d0000b2738c5355b30f1fdacbb606814d",
+            "height": 640,
+            "width": 640
+          },
+          {
+            "url": "https://mosaic.scdn.co/300/ab67616d0000b2731f1c3bd7f04475e8291292ddab67616d0000b2735be3240e6d06ced53544a437ab67616d0000b273634c7a3b895a270f57fbaa88ab67616d0000b2738c5355b30f1fdacbb606814d",
+            "height": 300,
+            "width": 300
+          },
+          {
+            "url": "https://mosaic.scdn.co/60/ab67616d0000b2731f1c3bd7f04475e8291292ddab67616d0000b2735be3240e6d06ced53544a437ab67616d0000b273634c7a3b895a270f57fbaa88ab67616d0000b2738c5355b30f1fdacbb606814d",
+            "height": 60,
+            "width": 60
+          }
+        ],
+        "name": "no gravity",
+        "owner": {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/3126ff4j6gjti4tfeatw2l3lyvre"
+          },
+          "href": "https://api.spotify.com/v1/users/3126ff4j6gjti4tfeatw2l3lyvre",
+          "id": "3126ff4j6gjti4tfeatw2l3lyvre",
+          "type": "user",
+          "uri": "spotify:user:3126ff4j6gjti4tfeatw2l3lyvre",
+          "display_name": "Sofiia Yeremeieva"
+        },
+        "public": false,
+        "snapshot_id": "MTYsM2JhYjk3NzNlYjJlYjI1NmFiOTM0NjFlYmIyNzNhMzM5YjhmZWMwMA==",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/1H3rcvbJdHyoq01HqiE8D8/tracks",
+          "total": 13
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:1H3rcvbJdHyoq01HqiE8D8",
+        "primary_color": null
+      }
+    ]

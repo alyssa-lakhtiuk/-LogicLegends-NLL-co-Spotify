@@ -54,7 +54,6 @@ app.get('/account', (req, res) => {
 });
 app.get('/analysis', (req, res) => {
     setAccessToken(req.query.access_token)
-    getMyEmail()
     res.status(200).sendFile(path.join(__dirname, 'design', 'analysis.html'));
 });
 

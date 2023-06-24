@@ -59,6 +59,9 @@
       font-family: "Nunito", sans-serif;
       background-color: #3c3f41;
     }
+    .heading_of_plot{
+      color:#FFFFFF
+    }
   </style>
 </head>
 
@@ -86,12 +89,223 @@
   </nav>
 
 
-
 <!-- тут треба додати відображення, якщо треба зовнішній вигляд пофікшу/допоможу пофіксити -->
-
-
+<div>
+  <div class='tableauPlaceholder' id='viz1687593153163' style='position: relative'><noscript><a href='#'><img alt='Spotify-analytics ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Sp&#47;Spotify-data-analysis&#47;Spotify-analytics&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Spotify-data-analysis&#47;Spotify-analytics' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Sp&#47;Spotify-data-analysis&#47;Spotify-analytics&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1687593153163');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1357px';vizElement.style.minHeight='998px';vizElement.style.maxHeight='1098px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1357px';vizElement.style.minHeight='998px';vizElement.style.maxHeight='1098px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='1727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
 </div>
+<div> 
+  <h3 class="heading_of_plot">Total number of tracks in every playlist </h3>
+<script src="https://d3js.org/d3.v4.js"></script>
 
+<!-- Create a div where the graph will take place -->
+<div class="visualizations" id="my_dataviz1"></div>
+<script>
+
+
+  // set the dimensions and margins of the graph
+  var margin = {top: 10, right: 30, bottom: 90, left: 40},
+      width = 460 - margin.left - margin.right,
+      height = 450 - margin.top - margin.bottom;
+  
+  // append the svg object to the body of the page
+  var svg = d3.select("#my_dataviz1")
+    .append("svg")
+      .attr("width", width + margin.left + margin.right)
+      .attr("height", height + margin.top + margin.bottom)
+    .append("g")
+      .attr("transform",
+            "translate(" + margin.left + "," + margin.top + ")");
+    
+  
+  // Parse the Data
+  d3.json("json/userPlaylists.json", function(data) {
+  var maxTracks = Math.max.apply(Math, data.map(function(o) { return o.tracks.total; }));
+  // X axis
+  var x = d3.scaleBand()
+    .range([ 0, width ])
+    .domain(data.map(function(d) { return d.name; }))
+    .padding(0.2);
+    // .color('white');
+
+  svg.append("g")
+    .attr("transform", "translate(0," + height + ")")
+    .call(d3.axisBottom(x))
+    .selectAll("text")
+      .attr("transform", "translate(-10,0)rotate(-45)")
+      .style("text-anchor", "end")
+      .style('fill', 'white');
+  
+  // Add Y axis
+  var y = d3.scaleLinear()
+    .domain([0, maxTracks])
+    .range([ height, 0]);
+  svg.append("g")
+    .call(d3.axisLeft(y))
+    .selectAll('text')
+      .style('fill', 'white');
+
+  
+  // Bars
+  svg.selectAll("mybar")
+    .data(data)
+    .enter()
+    .append("rect")
+      .attr("x", function(d) { return x(d.name); })
+      .attr("width", x.bandwidth())
+      .attr("fill", "#00c24a")
+      // no bar at the beginning thus:
+      .attr("height", function(d) { return height - y(0); }) // always equal to 0
+      .attr("y", function(d) { return y(0); })
+  
+  // Animation
+  svg.selectAll("rect")
+    .transition()
+    .duration(800)
+    .attr("y", function(d) { return y(d.tracks.total); })
+    .attr("height", function(d) { return height - y(d.tracks.total); })
+    .delay(function(d,i){console.log(i) ; return(i*100)})
+  
+  })
+  
+  </script>
+</div>
+<div>
+<h3 class="heading_of_plot">Popularity vs age of your favorite tracks</h3>
+    <!-- <script src="https://d3js.org/d3.v4.js"></script> -->
+    <div id="my_dataviz2"></div>
+    <script>
+      // set the dimensions and margins of the graph
+      var margin = {top: 10, right: 30, bottom: 30, left: 60},
+          width = 460 - margin.left - margin.right,
+          height = 400 - margin.top - margin.bottom;
+      
+      // append the svg object to the body of the page
+      var svg2 = d3.select("#my_dataviz2")
+        .append("svg")
+          .attr("width", width + margin.left + margin.right)
+          .attr("height", height + margin.top + margin.bottom)
+        .append("g")
+          .attr("transform",
+                "translate(" + margin.left + "," + margin.top + ")");
+      
+      //Read the data
+      d3.json("json/topTraks.json",
+      
+        // // When reading the csv, I must format variables:
+        // function(d){
+        //   return { release_date : d3.timeParse("%Y-%m-%d")(d.album.release_date), popularity : d.popularity }
+        // },
+      
+        // Now I can use this dataset:
+        function(data) {
+          data = data.sort(function(a, b){
+              return d3.timeParse("%Y-%m-%d")(a.album.release_date) - d3.timeParse("%Y-%m-%d")(b.album.release_date);
+          });
+          // Add X axis --> it is a date format
+          var x = d3.scaleTime()
+            .domain(d3.extent(data, function(d) { return d3.timeParse("%Y-%m-%d")(d.album.release_date); }))
+            .range([ 0, width ]);
+          xAxis = svg2.append("g")
+            .attr("transform", "translate(0," + height + ")")
+            .call(d3.axisBottom(x))
+            .selectAll("text")
+              .style('fill', 'white');
+      
+          // Add Y axis
+          var y = d3.scaleLinear()
+            .domain([0, d3.max(data, function(d) { return + d.popularity; })])
+            .range([ height, 0 ]);
+          yAxis = svg2.append("g")
+            .call(d3.axisLeft(y))
+            .selectAll("text")
+              .style('fill', 'white');
+      
+          // Add a clipPath: everything out of this area won't be drawn.
+          var clip = svg2.append("defs").append("svg:clipPath")
+              .attr("id", "clip")
+              .append("svg:rect")
+              .attr("width", width )
+              .attr("height", height )
+              .attr("x", 0)
+              .attr("y", 0);
+      
+          // Add brushing
+          var brush = d3.brushX()                   
+              .extent( [ [0,0], [width,height] ] )  
+              .on("end", updateChart)
+      
+          // Create the area variable: where both the area and the brush take place
+          var area = svg2.append('g')
+            .attr("clip-path", "url(#clip)")
+      
+          // Create an area generator
+          var areaGenerator = d3.area()
+            .x(function(d) { return x(d3.timeParse("%Y-%m-%d")(d.album.release_date)) })
+            .y0(y(0))
+            .y1(function(d) { return y(d.popularity) })
+      
+          // Add the area
+          area.append("path")
+            .datum(data)
+            .attr("class", "myArea")  // I add the class myArea to be able to modify it later on.
+            .attr("fill", "#00c24a")
+            .attr("fill-opacity", .9)
+            .attr("stroke", "black")
+            .attr("stroke-width", 1)
+            .attr("d", areaGenerator )
+      
+          // Add the brushing
+          area
+            .append("g")
+              .attr("class", "brush")
+              .call(brush);
+      
+          // A function that set idleTimeOut to null
+          var idleTimeout
+          function idled() { idleTimeout = null; }
+      
+          // A function that update the chart for given boundaries
+          function updateChart() {
+      
+            // What are the selected boundaries?
+            extent = d3.event.selection
+      
+            // If no selection, back to initial coordinate. Otherwise, update X axis domain
+            if(!extent){
+              if (!idleTimeout) return idleTimeout = setTimeout(idled, 350); // This allows to wait a little bit
+              x.domain([ 4,8])
+            }else{
+              x.domain([ x.invert(extent[0]), x.invert(extent[1]) ])
+              area.select(".brush").call(brush.move, null) // This remove the grey brush area as soon as the selection has been done
+            }
+      
+            // Update axis and area position
+            xAxis.transition().duration(1000).call(d3.axisBottom(x))
+            area
+                .select('.myArea')
+                .transition()
+                .duration(1000)
+                .attr("d", areaGenerator)
+          }
+      
+          // If user double click, reinitialize the chart
+          svg2.on("dblclick",function(){
+            x.domain(d3.extent(data, function(d) { return d3.timeParse("%Y-%m-%d")(d.album.release_date); }))
+            xAxis.transition().call(d3.axisBottom(x))
+            area
+              .select('.myArea')
+              .transition()
+              .attr("d", areaGenerator)
+          });
+      
+      })
+      </script>
+</div>
+<div>
+  <script>
+    
+  </script>
+</div>
 <script>
 
   async function getQuests() {
