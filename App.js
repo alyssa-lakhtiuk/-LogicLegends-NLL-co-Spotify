@@ -32,8 +32,8 @@ const scopes = [
     'user-follow-read',
     'user-follow-modify'
   ];
-  const CLIENT_ID = '6588b23c8ac846d4ad55ab45294f826c'
-  const CLIENT_SECRET = '96b1de6c378b45bd86ed65b43865e046'
+  const CLIENT_ID = '1292b424202c4e199fea7c20f3eceafb'
+  const CLIENT_SECRET = '19278aed4fe140b3a1cafebbc3ad8e98'
   const REDIRECT_URI = 'http://localhost:8888/callback'
   
   var spotifyApi = new SpotifyWebApi({

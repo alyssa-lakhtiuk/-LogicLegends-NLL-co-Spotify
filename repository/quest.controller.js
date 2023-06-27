@@ -11,6 +11,7 @@ class QuestController {
         res.json(quests.rows)
     }
 
+
     async getQuestionsForQuest(req, res) {
         const questId = req.query.questId
         const questions = await db.query('select * from question where id_quest = $1', [questId]);
