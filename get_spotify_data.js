@@ -2,7 +2,7 @@ const { error } = require('console');
 const fs = require('fs');
 const { get } = require('http');
 const SpotifyWebApi = require('spotify-web-api-node');
-//let token = "BQCmomJR7IVNIuil9n0LaQ9p1cyVtQLEj01ULgYJHOxT9zOC5MIlngbhk7xafqw24h8XSiSP-ZFDnfjMdbHzLhmmeci-end5We-hUtPSHnBMDdX5Nm2EhmyqUImOHUWFRckUlPqgG5pZxPos35k6J1xzNWUWhzCMBzhGBueSCtfkEhUPw0ufdVU-kcEqyz-psOB5KwwKA0AJAfzuicg8WRGEHa3u3yG7xiw21hWoj1n62UXN84DX0nAecQfJlfzLwquklFvZmohmJzH5nwxRvi_qnMEabU5KNiAV7Fdq2DQP7_mo5YqBJbBLUnAryYuxd0Qo1A3SmyEkTQuQk9fA";
+// let token = "BQCmomJR7IVNIuil9n0LaQ9p1cyVtQLEj01ULgYJHOxT9zOC5MIlngbhk7xafqw24h8XSiSP-ZFDnfjMdbHzLhmmeci-end5We-hUtPSHnBMDdX5Nm2EhmyqUImOHUWFRckUlPqgG5pZxPos35k6J1xzNWUWhzCMBzhGBueSCtfkEhUPw0ufdVU-kcEqyz-psOB5KwwKA0AJAfzuicg8WRGEHa3u3yG7xiw21hWoj1n62UXN84DX0nAecQfJlfzLwquklFvZmohmJzH5nwxRvi_qnMEabU5KNiAV7Fdq2DQP7_mo5YqBJbBLUnAryYuxd0Qo1A3SmyEkTQuQk9fA";
 
 const spotifyApi = new SpotifyWebApi();
 
@@ -33,6 +33,14 @@ function setAccessToken(accesstoken){
 
 
 //GET MY PROFILE DATA
+
+async function getMyData() {
+  const data = await spotifyApi.getMe()
+  const myData = data 
+  let info = JSON.stringify(myData);
+  fs.writeFileSync("myData"+'.json', info);
+  return data
+}
 async function getMyId() {
   const data = await spotifyApi.getMe()
   return data.body.id
@@ -63,6 +71,9 @@ async function getUserPlaylists(userId) {
     console.log(playlist)
     playlists.push(playlist)    
   }
+  const playlistsJSON = playlists
+  let info = JSON.stringify(playlistsJSON);
+  fs.writeFileSync("design/json/userPlaylists"+'.json', info);
   return playlists              // palylist.name ;  palylist.id ; playlist.tracks.total (number)
 }                              //(to get traks from playlist use: getPlaylistTracks(playlistid)
 
@@ -76,6 +87,9 @@ async function getListOfCategories() {
     //console.log(category)
     categories.push(category)
   }
+  const listOfCategoriesJSON = categories
+  let info = JSON.stringify(listOfCategoriesJSON);
+  fs.writeFileSync("design/json/listOfCategories"+'.json', info);
   return categories // category.name ; category.id
 }
 
@@ -89,6 +103,9 @@ async function getPlaylistsForCategory(id_category) {
  for (let playlist of data.body.playlists.items) {
     playlists.push(playlist)
   }
+  const playlistsJSON = playlists
+  let info = JSON.stringify(playlistsJSON);
+  fs.writeFileSync("design/json/playlistsForCateory"+'.json', info);
   return playlists // playlist.name ; playlist.id
 }
 
@@ -104,9 +121,11 @@ async function getPlaylistTracks(playlistId) {
   let tracks = [];
 
   for (let track_obj of data.body.items) {
-    const track = track_obj.track
-    tracks.push(track);
+    tracks.push(track_obj.track);
   }
+  const tracksJSON = tracks
+  let info = JSON.stringify(tracksJSON);
+  fs.writeFileSync("design/json/traksByPlaylist"+'.json', info);
   return tracks;
 }
 
@@ -116,9 +135,12 @@ async function getMyTopTracks() {
   let tracks = []
 
  for (let track of data.body.items) {
-    con
+    //console.log(track.name)
     tracks.push(track) 
   }
+  const tracksJSON = tracks
+  let info = JSON.stringify(tracksJSON);
+  fs.writeFileSync('design/json/topTracks'+'.json', info);
   return tracks  // track.name ; track.id ; track.popularity (spotify rating) ; track.artists[0].name
 }
 
@@ -130,6 +152,9 @@ async function getMyTopArtists() {
  for (let artist of data.body.items) {
     artists.push(artist)
   }
+  const artistsJSON = artists
+  let info = JSON.stringify(artistsJSON);
+  fs.writeFileSync("design/json/topArtists"+'.json', info);
   return artists // artist.name ; artist.id
 }
 // +++++++++++++++++++++++++++++++++++++++++
@@ -200,6 +225,9 @@ async function getRecommendationsBasedOnSeeds(seed_artists, min_energy, min_popu
     recom_tracks.push(track);
     console.log(track.name)
   }
+  const tracksJSON = { tracks }
+  let info = JSON.stringify(tracksJSON);
+  fs.writeFileSync("recomemdationTraks"+'.json', info);
   return recom_tracks // track.name ; track.id; track.artists[0] ; track.popularity ; track.energy
   
 }
@@ -240,6 +268,7 @@ async function getRecommendationsBasedOnSeeds(seed_artists, min_energy, min_popu
 
 module.exports = {
   setAccessToken,
+  getMyData,
   getMyId,
   getMyEmail,
   getMyUserName,

@@ -1,5 +1,17 @@
 # -LogicLegends-NLL-co-Spotify
-# ReadMe file - Description of the site environment
+# How to run
+
+1. Install node.js, clone this repo, install all dependencies with 'npm install' command
+2. Download and install Postgres
+3. Open pg
+4. Create a database "spotify"
+5. Кight mouse button on this db -> Restore -> type: Custom or tar -> Choose file backup.sql from this repo
+6. Create your own Spotify App on https://developer.spotify.com/ 
+7. Set redirect uri to http://localhost:8888/callback
+8. Change CLIENT_ID and CLIENT_SECRET in App.js file
+9. Run code with 'node App.js'
+
+# Description of the site environment
  
 This ReadMe file describes the structure and functionality of the site. The site includes four main pages: "Home", "Quest", "User Information" and "Analytics". Each page has its own unique functionality and meets certain requirements. Below is a description of each page:
  

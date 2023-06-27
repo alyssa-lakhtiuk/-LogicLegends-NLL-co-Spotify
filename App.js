@@ -10,6 +10,7 @@ const {setAccessToken, getMyId , getMyEmail, getMyUserName, getUserPlaylists, ge
   getPlaylistsForCategory, getPlaylistTracks, getMyTopTracks, getMyTopArtists, getRecommendationsBasedOnSeeds} = require('./get_spotify_data')
 
 var SpotifyWebApi = require('spotify-web-api-node');
+const { callbackify } = require('util');
 const scopes = [
     'ugc-image-upload',
     'user-read-playback-state',
@@ -31,11 +32,14 @@ const scopes = [
     'user-follow-read',
     'user-follow-modify'
   ];
+  const CLIENT_ID = '1292b424202c4e199fea7c20f3eceafb'
+  const CLIENT_SECRET = '19278aed4fe140b3a1cafebbc3ad8e98'
+  const REDIRECT_URI = 'http://localhost:8888/callback'
   
   var spotifyApi = new SpotifyWebApi({
-    clientId: '464cde1927874338b59485ef848ed053',
-    clientSecret: '61db482ac68f44d5806663145ebffba1',
-    redirectUri: 'http://localhost:8888/callback'
+    clientId: CLIENT_ID,
+    clientSecret: CLIENT_SECRET,
+    redirectUri: REDIRECT_URI
   });
   
 
@@ -54,7 +58,11 @@ app.get('/account', (req, res) => {
 });
 app.get('/analysis', (req, res) => {
     setAccessToken(req.query.access_token)
-    getMyEmail()
+    userId = getMyId()
+    getListOfCategories()
+    getMyTopTracks()
+    getMyTopArtists()
+    getUserPlaylists(userId)
     res.status(200).sendFile(path.join(__dirname, 'design', 'analysis.html'));
 });
 

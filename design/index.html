@@ -209,7 +209,7 @@
 
     <div class = "row justify-content-end-left">
         <div class = "col-12 col-md-6 ">
-            <button class="btn ">
+            <button class="btn " onclick="composeEmail()">
                 <i class="icon bi bi-envelope-at"></i> contact us
             </button>
         </div>
@@ -234,6 +234,17 @@
     }
 
     getQuests()
+
+    function composeEmail() {
+        var recipient = "ksuhavilhova@gmail.com";
+        var subject = "Hello";
+
+        // Construct the mailto URL
+        var mailtoUrl = "mailto:" + recipient + "?subject=" + encodeURIComponent(subject);
+
+        // Open the user's email client
+        window.location.href = mailtoUrl;
+    }
 
 </script>
 
